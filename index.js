@@ -1,8 +1,7 @@
 var express     =   require("express"),
     app         =   express(),
     bodyParser  =   require("body-parser")
-    session     =   require('express-session'),
-    path        =   require('path');
+    session     =   require('express-session');
 
 const AUTHY_API_KEY = process.env.AUTHY_KEY;
 const authy = require('authy')(AUTHY_API_KEY)
